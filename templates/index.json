@@ -48,9 +48,15 @@
         "stack_images_on_mobile": false,
         "show_text_below": false
       }
+    },
+    "liquid_HjeyHB": {
+      "type": "liquid",
+      "settings": {
+      }
     }
   },
   "order": [
-    "image_banner"
+    "image_banner",
+    "liquid_HjeyHB"
   ]
 }
