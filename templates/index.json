@@ -15,8 +15,8 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Driving Success Across Australia",
-            "heading_size": "h0"
+            "heading": "<strong>Driving Success Across Australia<\/strong>",
+            "heading_size": "hxxl"
           }
         },
         "button": {
