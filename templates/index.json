@@ -52,6 +52,7 @@
     "liquid_HjeyHB": {
       "type": "liquid",
       "settings": {
+        "add-title": "This is a title"
       }
     }
   },
