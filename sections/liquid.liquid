@@ -1,13 +1,26 @@
-<h1>{{ section.settings.add-title }}</h1>
+{% style %}
+  .section-wrapper {
+    background: #000000;
+  }
+
+  .section-title {
+    color: #ffffff;
+  }
+{% endstyle %}
+
+<div class="section-wrapper">
+  <h1 class="section-title">Custom Liquid Section</h1>
+</div>
 
 {% schema %}
 {
   "name": "Custom Liquid",
   "settings": [
     {
-      "id": "add-title",
       "type": "text",
-      "label": "Add a title here"
+      "id": "title-text",
+      "label": "Add Title",
+      "default": "Title" 
     }
   ],
   "presets": [
