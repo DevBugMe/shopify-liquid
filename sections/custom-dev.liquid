@@ -1,7 +1,7 @@
 {{ 'custom-dev.css' | asset_url | stylesheet_tag }}
 
 {% for collection in collections %}
-  {{ collection.title }}
+  {{- collection.title | link_to: collection.url }}
 {% endfor %}
 
 {% schema %}
