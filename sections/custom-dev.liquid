@@ -1,8 +1,8 @@
 {{ 'custom-dev.css' | asset_url | stylesheet_tag }}
 
-{% for p in product %}
-  {{- p.title | link_to: p.url }}
-{% endfor %}
+
+{{- product.title | link_to: product.url }}
+
 
 {% schema %}
   {
