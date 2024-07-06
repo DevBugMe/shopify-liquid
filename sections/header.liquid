@@ -199,6 +199,7 @@
     %}
 
     {%- if section.settings.logo_position == 'middle-center' -%}
+      <h2>test</h2>
       {%- if request.page_type == 'index' -%}
         <h1 class="header__heading">
       {%- endif -%}
@@ -664,6 +665,17 @@
   "blocks": [
     {
       "type": "@app"
+    },
+    {
+      "type": "logo",
+      "name": "Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo"
+        }
+      ]
     }
   ]
 }
