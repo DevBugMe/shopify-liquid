@@ -1,6 +1,6 @@
 {{ 'custom-dev.css' | asset_url | stylesheet_tag }}
 
-{% for product in all_products %}
+{% for product in collections['collection-1'].products %}
   {{- product.title | link_to: product.url }}
 {% endfor %}
 
