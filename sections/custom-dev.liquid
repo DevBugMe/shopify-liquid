@@ -1,7 +1,7 @@
 {{ 'custom-dev.css' | asset_url | stylesheet_tag }}
 
-{% for block in section.blocks %}
-  {{ block.settings.text }}
+{% for collection in collections %}
+  {{ collection }}
 {% endfor %}
 
 {% schema %}
