@@ -135,6 +135,10 @@ slideshow-component:not(.page-width) .slider-buttons {
   display: flex; 
 }
 
+.slideshow__control-wrapper-hide {
+  display: none; 
+}
+
 .slideshow__autoplay {
   position: absolute;
   right: 0;
