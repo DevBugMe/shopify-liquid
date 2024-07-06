@@ -67,6 +67,17 @@
     },
     "custom_dev_6YzzxE": {
       "type": "custom-dev",
+      "blocks": {
+        "text_TWbXx3": {
+          "type": "text",
+          "settings": {
+            "text": "text"
+          }
+        }
+      },
+      "block_order": [
+        "text_TWbXx3"
+      ],
       "settings": {
       }
     }
