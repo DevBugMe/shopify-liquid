@@ -132,7 +132,7 @@ slideshow-component:not(.page-width) .slider-buttons {
 }
 
 .slideshow__control-wrapper {
-  display: flex;
+  display: flex; 
 }
 
 .slideshow__autoplay {
