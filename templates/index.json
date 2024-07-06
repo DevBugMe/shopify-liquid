@@ -55,26 +55,19 @@
         "featured_collection_6pnPzT": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "frontpage"
           }
         },
         "featured_collection_NEeFVP": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
-          }
-        },
-        "featured_collection_FEWcrU": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
+            "collection": "collections-2"
           }
         }
       },
       "block_order": [
         "featured_collection_6pnPzT",
-        "featured_collection_NEeFVP",
-        "featured_collection_FEWcrU"
+        "featured_collection_NEeFVP"
       ],
       "settings": {
         "title": "Collections",
