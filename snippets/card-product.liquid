@@ -612,12 +612,6 @@
             {%- endif -%}
             {% render 'price', show_compare_at_price: true %}
           </div>
-          <form action="/cart/add" method="post" id="product-form- {{ product.id }}">
-            <input type="hidden" name="id" value="{{ product.variants.first.id }}">
-            <div>
-              <button type="submit" name="add">Add to cart</button>
-            </div>
-          </form>
         </div>
       </div>
     </div>
