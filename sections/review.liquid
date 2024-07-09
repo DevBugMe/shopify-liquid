@@ -12,12 +12,25 @@
   .review-recommendation-photos {
     width: 70%;
   }
+  .5star {
+    background: #555555;
+  }
+  .5star-progress {
+    background: red;
+    width: 20%;
+    height: 100%;
+  }
 {% endstyle %}
 
 <div class="product-review-widget-row container recommendation">
   
   <div class="review-indicator">
     <p>based on 50 reviews</p>
+    <div class="indicator-wrapper">
+      <div class="5star">
+        <div class="5star-progress"></div>
+      </div>
+    </div>
   </div>
 
   <div class="review-recommendation-photos">
