@@ -18,7 +18,6 @@
   .star-5-progress {
     display: block !important;
     background: red;
-    width: 20%;
     height: 100%;
   }
 
@@ -39,7 +38,7 @@
     <p>based on 50 reviews</p>
     <div class="recommendation-review-indicator-wrapper">
       <div class="recommendation-review-star-5">
-        <div class="star-5-progress"></div>
+        <div class="star-5-progress" style="width: {{ section.blocks.star5 }}%"></div>
       </div>
     </div>
   </div>
@@ -72,7 +71,14 @@
 {% schema %}
   {
     "name": "Review",
-    "settings": [],
+    "settings": [
+      {
+        "type": "text",
+        "id": "star5",
+        "label": "5 Star Brogress Bar (%) 1-100",
+        "default": "90"
+      }
+    ],
     "blocks": [
       {
         "type": "reviews",
