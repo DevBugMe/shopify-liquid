@@ -36,6 +36,16 @@
   .recommendation-photos-wrapper {
     display: flex;
   }
+
+  /* mobile */
+  @media (max-width: 768px) {
+    .recommendation {
+      flex-direction: column;
+    }
+    .recommendation-review-indicator, .review-recommendation-photos {
+      width: 100%;
+    }
+  }
 {% endstyle %}
 <div class="page-width">
 
