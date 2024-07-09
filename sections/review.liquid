@@ -1,6 +1,43 @@
+{% style %}
+{% endstyle %}
+
+<div class="product-review-widget-row container recommendation">
+  <div class="review-indicator">
+  </div>
+
+  <div class="review-recommendation-photos">
+    
+  </div>
+</div>
+
+
+{% for block in section.blocks %}
+  {% if block.settings.review_img != blank %}
+    <img src="{{ block.settings.review_img }}">
+  {% endif %}
+{% endfor %}
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Review",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "reviews",
+        "name": "reviews",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "review_img",
+            "label": "Review Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Review"
+      }
+    ]
   }
 {% endschema %}
