@@ -1,4 +1,7 @@
 {% style %}
+  .photos-wrapper {
+    display: flex;
+  }
 {% endstyle %}
 
 <div class="product-review-widget-row container recommendation">
@@ -6,13 +9,15 @@
   </div>
 
   <div class="review-recommendation-photos">
+    <div class="photos-wrapper">
     {% for block in section.blocks %}
-      {% if block.type == "reviewss" %}
+      {% if block.type == "reviews" %}
         {% if block.settings.review_img != blank %}
           <img src="{{ block.settings.review_img | img_url }}">
         {% endif %}
       {% endif %}
     {% endfor %}
+    </div>
   </div>
 </div>
 
@@ -31,17 +36,6 @@
       {
         "type": "reviews",
         "name": "reviews",
-        "settings": [
-          {
-            "type": "image_picker",
-            "id": "review_img",
-            "label": "Review Image"
-          }
-        ]
-      },
-      {
-        "type": "reviewss",
-        "name": "reviewss",
         "settings": [
           {
             "type": "image_picker",
