@@ -5,10 +5,12 @@
 {% endstyle %}
 
 <div class="product-review-widget-row container recommendation">
+  
   <div class="review-indicator">
   </div>
 
   <div class="review-recommendation-photos">
+    <h4>93% would recommend these products</h4>
     <div class="photos-wrapper">
     {% for block in section.blocks %}
       {% if block.type == "reviews" %}
@@ -19,6 +21,7 @@
     {% endfor %}
     </div>
   </div>
+  
 </div>
 
 
