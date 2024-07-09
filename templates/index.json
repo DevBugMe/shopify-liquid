@@ -95,13 +95,43 @@
           "settings": {
             "review_img": "shopify:\/\/shop_images\/t-shirt.jpg"
           }
+        },
+        "reviews_dCm4iV": {
+          "type": "reviews",
+          "settings": {
+            "review_img": "shopify:\/\/shop_images\/t-shirt_2.webp"
+          }
+        },
+        "reviews_Er8Eeb": {
+          "type": "reviews",
+          "settings": {
+            "review_img": "shopify:\/\/shop_images\/t-shirt_2.webp"
+          }
+        },
+        "reviews_BTnhDq": {
+          "type": "reviews",
+          "settings": {
+            "review_img": "shopify:\/\/shop_images\/t-shirt_2.webp"
+          }
+        },
+        "reviews_GcbgJP": {
+          "type": "reviews",
+          "settings": {
+            "review_img": "shopify:\/\/shop_images\/t-shirt_2.webp"
+          }
         }
       },
       "block_order": [
         "reviews_pDcexG",
-        "reviews_CDWLkh"
+        "reviews_CDWLkh",
+        "reviews_dCm4iV",
+        "reviews_Er8Eeb",
+        "reviews_BTnhDq",
+        "reviews_GcbgJP"
       ],
       "settings": {
+        "star5": "90",
+        "star4": "80"
       }
     }
   },
