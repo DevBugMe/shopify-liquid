@@ -1,21 +1,16 @@
 {% style %}
+  /* Style for Indicator */
   .recommendation {
     display: flex;
     align-items: center;
   }
-  .photos-wrapper {
-    display: flex;
-  }
-  .review-indicator {
+  .recommendation-review-indicator {
     width: 30%;
   }
-  .review-recommendation-photos {
-    width: 70%;
-  }
-  .star-5 {
+  .recommendation-review-star-5 {
     background: #555555;
     width: 100%;
-    height: 24px;
+    height: 10px;
   }
   .star-5-progress {
     display: block !important;
@@ -23,14 +18,22 @@
     width: 20%;
     height: 100%;
   }
+
+  /*Style for photos*/
+  .review-recommendation-photos {
+    width: 70%;
+  }
+  .recommendation-photos-wrapper {
+    display: flex;
+  }
 {% endstyle %}
 
 <div class="product-review-widget-row container recommendation">
   
-  <div class="review-indicator">
+  <div class="recommendation-review-indicator">
     <p>based on 50 reviews</p>
-    <div class="indicator-wrapper">
-      <div class="star-5">
+    <div class="recommendation-review-indicator-wrapper">
+      <div class="recommendation-review-star-5">
         <div class="star-5-progress"></div>
       </div>
     </div>
@@ -38,7 +41,7 @@
 
   <div class="review-recommendation-photos">
     <h4>93% would recommend these products</h4>
-    <div class="photos-wrapper">
+    <div class="recommendation-photos-wrapper">
     {% for block in section.blocks %}
       {% if block.type == "reviews" %}
         {% if block.settings.review_img != blank %}
